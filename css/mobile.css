@@ -30,6 +30,7 @@
     }
     .a-propos {
         margin-bottom: 15px;
+        margin-left: -15px;
     }
     .a-propos .social-media .social {
         margin-bottom: 5px;
