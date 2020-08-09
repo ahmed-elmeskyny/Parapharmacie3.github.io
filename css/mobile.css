@@ -17,8 +17,28 @@
     }
     footer {
         width: 100%;
+        margin-left: 0;
     }
     .menu3 {
         width: 100%;
+    }
+    .up{
+        left: 50%;
+    }
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+    .a-propos {
+        margin-bottom: 15px;
+    }
+    .a-propos .social-media .social {
+        margin-bottom: 5px;
+    }
+    .footer-menu{
+        width: 100%;
+    }
+    #search .input1 {
+        margin-left: 15px;
+        width: 70%;
     }
 }
