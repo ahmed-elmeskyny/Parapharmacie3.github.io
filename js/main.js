@@ -13,6 +13,7 @@ let up = document.querySelector(".up");
 let menu = document.querySelector(".mobile-menu");
 let bars = document.querySelector(".fa-bars1");
 let aside = document.querySelector(".aside");
+let mobile = document.querySelector(".mobile-header");
 let i=0;
 
 let slider = function(){
@@ -65,6 +66,7 @@ let slider = function(){
 window.addEventListener("scroll",function(){
    let head = document.querySelector(".nosticky");
    head.classList.toggle("sticky", window.scrollY > 110);
+   mobile.classList.toggle("sticky-mobile",window.scrollY > 510);
    if(window.scrollY > 110) {
        up.style.display="inline";
    }else if (window.scrollY < 110){

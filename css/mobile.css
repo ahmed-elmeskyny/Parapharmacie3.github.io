@@ -1,17 +1,31 @@
 .mobile-header {
-    margin-top: 5px;
+    display: none;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    display: flex;
+    height: 100px;
     justify-content:space-between;
     align-items: center;
     font-family: 'Nunito Sans', sans-serif; 
+    padding: 0;
+    margin-top: 0;
+}
+.sticky-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px lightgray;
+    margin: 0;
+    transition: all 0.6s ease-out;
 }
 
 .phona {
     margin-top: 20px;
 }
+
 
 .mobile-header p {
     display: inline;
@@ -26,6 +40,10 @@
     font-size: 30px;
 }
 
+.phona .fas {
+    font-size: 30px;
+    margin-right: 10px;
+}
 
 .mobile-menu {
     font-family: 'Nunito Sans', sans-serif; 
@@ -40,9 +58,6 @@
     height: 100%;
     overflow: hidden;
 }
-.open {
-
- }
 
 .aside {
     width: 0;
@@ -116,7 +131,7 @@
         width: 70%;
     }
     .container {
-        display:inline;
+        display:inline-block;
         color: black;
         background-color: aliceblue;
         padding: 10px;
@@ -135,5 +150,8 @@
         width: 100%;
         height: 40%;
         margin-right: 10px;
+    }
+    .mobile-header{
+        display: flex;
     }
 }
