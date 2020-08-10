@@ -112,7 +112,8 @@ search1.addEventListener("click",()=>{
 })
 
 trans.addEventListener("click",(e)=>{
-    if(e.target.classList != "search-mobile" ){
+    console.log(e.target)
+    if(e.target.classList != "search1" && e.target.classList != "search2" && e.target.classList != "search-mobile" ){
         search.style.height="0";
         trans.style.height="0";
     }

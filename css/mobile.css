@@ -133,7 +133,7 @@
     border-radius: 10px 10px 10px 10px;
     background-color:  #17E600;
     color: white;
-    
+    outline: none;
 }
 
 @media all and (max-width:685px){
@@ -150,7 +150,7 @@
         margin-left: 0;
     }
     .menu3 {
-        width: 100%;
+        margin-left: 20px;
     }
     .up{
         left: 50%;
