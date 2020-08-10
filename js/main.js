@@ -10,6 +10,9 @@ let conseilImg = document.querySelector(".conseil-img img");
 let conseilPage = document.querySelector(".conseil-page");
 let container = document.querySelector(".container");
 let up = document.querySelector(".up");
+let menu = document.querySelector(".mobile-menu");
+let bars = document.querySelector(".fa-bars1");
+let aside = document.querySelector(".aside");
 let i=0;
 
 let slider = function(){
@@ -85,6 +88,18 @@ up.addEventListener("click",()=> {
     window.scrollTo(0,0);
 })
 
+bars.addEventListener("click",()=>{
+    menu.style.width = "100%";
+    aside.style.width = "70%";
+
+})
+
+menu.addEventListener("click",(e)=>{
+    if(e.target.classList != "aside"){
+        menu.style.width = "0";
+        aside.style.width = "0";
+    }
+})
 slider();
  
 ;
