@@ -14,6 +14,9 @@ let menu = document.querySelector(".mobile-menu");
 let bars = document.querySelector(".fa-bars1");
 let aside = document.querySelector(".aside");
 let mobile = document.querySelector(".mobile-header");
+let search = document.querySelector(".search-mobile");
+let search1 = document.querySelector(".mobile-header .nani .fa-search");
+let trans = document.querySelector(".transparent");
 let i=0;
 
 let slider = function(){
@@ -100,6 +103,18 @@ menu.addEventListener("click",(e)=>{
     if(e.target.classList != "aside"){
         menu.style.width = "0";
         aside.style.width = "0";
+    }
+})
+
+search1.addEventListener("click",()=>{
+    search.style.height="100px";
+    trans.style.height="100%";
+})
+
+trans.addEventListener("click",(e)=>{
+    if(e.target.classList != "search-mobile" ){
+        search.style.height="0";
+        trans.style.height="0";
     }
 })
 slider();
