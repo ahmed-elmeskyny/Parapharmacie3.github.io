@@ -123,10 +123,10 @@ body {
 }
 
 .slider {
-    margin-top: 10px;
+   margin-top: 10px;
    margin-left: 80px;
    width: 90%;
-   height: 300px;
+   height: 30%;
    overflow: hidden;
 }
 
@@ -257,6 +257,7 @@ body {
 
 .map iframe {
     margin: 5px;
+    width: 100%;
 }
 
 .map p {
@@ -350,10 +351,8 @@ footer {
 
 .menu3 {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
-
 .menu3 ul {
     list-style: none;
     padding: 0;
@@ -373,6 +372,9 @@ footer {
 }
 .menu3 ul li a:hover {
     color: #17E600;
+}
+.hour {
+    margin-left: 70px;
 }
 .hour li {
     border-bottom: 1px #EFEFEF solid;
@@ -410,7 +412,7 @@ footer {
      padding: 6px ;
      border: 0;
      outline: none;
-     background-color: #17E600;
+     background-color: #32A749;
      color: white;
      padding-top: 11px;
      padding-bottom: 11px;
@@ -463,3 +465,4 @@ footer {
 .fa-arrow-up {
     color: #17E600;
 }
+

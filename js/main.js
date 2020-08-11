@@ -17,6 +17,8 @@ let mobile = document.querySelector(".mobile-header");
 let search = document.querySelector(".search-mobile");
 let search1 = document.querySelector(".mobile-header .nani .fa-search");
 let trans = document.querySelector(".transparent");
+let categories = document.querySelector("#categories");
+let subMenu = document.querySelector("#sub-menu");
 let i=0;
 
 let slider = function(){
@@ -69,12 +71,12 @@ let slider = function(){
 window.addEventListener("scroll",function(){
    let head = document.querySelector(".nosticky");
    head.classList.toggle("sticky", window.scrollY > 110);
-   mobile.classList.toggle("sticky-mobile",window.scrollY > 510);
+   mobile.classList.toggle("sticky-mobile",window.scrollY > 500);
    if(window.scrollY > 110) {
        up.style.display="inline";
-   }else if (window.scrollY < 110){
+   }else if (window.scrollY < 110){  
        up.style.display="none";
-   }
+   } 
 })
 
 cardConseil.forEach((i)=>{
@@ -100,7 +102,7 @@ bars.addEventListener("click",()=>{
 })
 
 menu.addEventListener("click",(e)=>{
-    if(e.target.classList != "aside"){
+    if(e.target.id  != "categories"){
         menu.style.width = "0";
         aside.style.width = "0";
     }
@@ -118,6 +120,16 @@ trans.addEventListener("click",(e)=>{
         trans.style.height="0";
     }
 })
+
+categories.addEventListener("click",()=>{
+  if( subMenu.style.height === "100%"){  
+    subMenu.style.height="0";
+  }else if(subMenu.style.height="0"){
+    subMenu.style.height="100%";
+  }
+})
+
+
 slider();
  
 ;

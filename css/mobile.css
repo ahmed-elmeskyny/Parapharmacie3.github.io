@@ -3,12 +3,13 @@
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    height: 100px;
+    height: 80px;
     justify-content:space-between;
     align-items: center;
     font-family: 'Nunito Sans', sans-serif; 
     padding: 0;
     margin-top: 0;
+
 }
 .sticky-mobile {
     position: fixed;
@@ -16,16 +17,12 @@
     left: 0;
     z-index: 1;
     width: 100%;
+    overflow: hidden;
     background-color: whitesmoke;
     box-shadow: 2px 2px 2px lightgray;
     margin: 0;
-    transition: all 0.6s ease-out;
+    transition: all 1s ease;
 }
-
-.phona {
-    margin-top: 20px;
-}
-
 
 .mobile-header p {
     display: inline;
@@ -38,11 +35,11 @@
 }
 .mobile-header .fas {
     font-size: 30px;
+    margin-left: 10px;
 }
 
-.phona .fas {
-    font-size: 30px;
-    margin-right: 10px;
+.phona {
+    margin:0;
 }
 
 .mobile-menu {
@@ -66,17 +63,17 @@
     top: 0;
     left: 0;
     background-color: white;
-    font-size: 15px;
+    font-size: 20px;
     overflow: hidden;
     transition: width 0.5s ;
 }
 
 .aside h4 {
-    font-size: 15px;
+    font-size: 25px;
     margin-left: 10px;
 }
 
-.aside ul {
+.aside #menu {
     margin: 0;
     padding: 0;
     margin-top: 30px;
@@ -84,14 +81,23 @@
     text-decoration: none;
 }
 
-.aside ul li {
+.aside #menu li {
     margin-bottom: 10px;
     padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
     border-bottom: 1px solid #EFEFEF;
 }
-.aside ul li a {
+.aside #menu li a {
     text-decoration: none;
     color: black;
+}
+
+#sub-menu {
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+
 }
 
 .transparent {
@@ -131,7 +137,7 @@
     height: 40px;
     border: 1px solid;
     border-radius: 10px 10px 10px 10px;
-    background-color:  #17E600;
+    background-color:  #32A749;
     color: white;
     outline: none;
 }
@@ -198,5 +204,8 @@
     }
     .nani1 {
         margin-right: 20px;
+    }
+    .hour {
+        margin-left: 0;
     }
 }
