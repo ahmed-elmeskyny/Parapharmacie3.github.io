@@ -1,0 +1,22 @@
+{
+  "name": "parapharmacie3",
+  "version": "1.0.0",
+  "description": "para",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmed-elmeskyny/parapharmacie3.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmed-elmeskyny/parapharmacie3.github.io/issues"
+  },
+  "homepage": "https://github.com/ahmed-elmeskyny/parapharmacie3.github.io#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}

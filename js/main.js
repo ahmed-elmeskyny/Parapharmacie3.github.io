@@ -21,24 +21,7 @@ let categories = document.querySelector("#categories");
 let subMenu = document.querySelector("#sub-menu");
 let i=0;
 
-let slider = function(){
-    option[1].style.backgroundColor ="white";
-    option[2].style.backgroundColor ="white";
-    slide.setAttribute("src",source[i]);
-    option[i].style.backgroundColor ="lightsalmon";
-    if(i==!0){
-        option[i-1].style.backgroundColor ="white";
-    }
-    if(i<source.length-1){
-        i++
-    }else {
-        i=0;
-        
-    }  
-    let time=setTimeout("slider()",3000);
-    time;
- 
-}
+
 
  categorie.addEventListener("mouseover",function(){
      dropmenu.style.display = "inline-block";
@@ -130,6 +113,5 @@ categories.addEventListener("click",()=>{
 })
 
 
-slider();
+
  
-;

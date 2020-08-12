@@ -129,21 +129,15 @@ body {
    height: 30%;
    overflow: hidden;
 }
-
-.slider1 ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 40%;
-    list-style: none;
-    display: flex;
+.glide {
+    cursor: all-scroll;
 }
-
-.slider1 ul li {
-    width: 10px;
-    height: 7px;
-    border: lightsalmon 2px solid;
-    border-radius: 50%;
-    margin: 5px;
+.glide__arrow {
+    font-size: 30px;
+    border: none;
+}
+.glide__bullet {
+    color: #32A749;
 }
 
 #title {
