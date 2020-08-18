@@ -6,8 +6,12 @@ let mobile = document.querySelector(".mobile-header");
 let search = document.querySelector(".search-mobile");
 let search1 = document.querySelector(".mobile-header .nani .fa-search");
 let trans = document.querySelector(".transparent");
-let categorie = document.querySelector("#categories");
+let categories = document.querySelector("#categories");
 let subMenu = document.querySelector("#sub-menu");
+let categorie = document.querySelector("#categorie");
+let dropmenu = document.querySelector(".dropmenu");
+let li = document.querySelectorAll(".li");
+let icon = document.querySelectorAll(".icon");
 
 window.addEventListener("scroll",function(){
     let head = document.querySelector(".nosticky");
@@ -21,7 +25,7 @@ window.addEventListener("scroll",function(){
  })
 
 
-categorie.addEventListener("click",()=>{
+categories.addEventListener("click",()=>{
     subMenu.style.height="100%";
 })
 
@@ -55,3 +59,31 @@ trans.addEventListener("click",(e)=>{
         trans.style.height="0";
     }
 })
+
+categorie.addEventListener("mouseover",function(){
+    dropmenu.style.display = "inline-block";
+})
+categorie.addEventListener("mouseout",function(){
+       dropmenu.style.display = "none";
+})
+
+let Mousein=function(){
+   dropmenu.style.display = "inline-block";
+}
+let mouseout=function(){
+   dropmenu.style.display = "none";
+}
+ 
+for(let i=0; i<li.length;i++){
+    li[i].addEventListener("mouseover",function(){
+        li[i].style.textDecoration ="underline";
+        icon[i].style.color="#17E600";
+    })
+}
+
+for(let i=0; i<li.length;i++){
+   li[i].addEventListener("mouseout",function(){
+       li[i].style.textDecoration="none"
+       icon[i].style.color="black";
+   })
+}

@@ -1,0 +1,44 @@
+.contact-2 {
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.contact-2 h4 {
+    margin-top:  20px;
+    margin-bottom: 20px;
+
+}
+
+.contact-2 input {
+    width: 80%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px ;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+#message {
+  padding-bottom: 200px;
+}
+
+.contact-2 input:hover {
+    border-color: #17E600;
+}
+
+.contact-2 button {
+    display: block;
+    margin-top: 20px;
+    margin-left: 72%;
+    padding: 20px;
+    border: transparent ;
+    border-radius: 10px;
+    background-color: #32A749;
+
+}
+
+.contact-2 button:hover {
+    background-color: rgba(23, 230,0 , 0.9);
+}

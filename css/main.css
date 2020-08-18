@@ -155,7 +155,7 @@ header {
     color: #32A749;
 }
 
-.mark {
+.mark , .ventes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
