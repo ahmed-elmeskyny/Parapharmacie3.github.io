@@ -1,0 +1,56 @@
+.card-produits {
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    height: 350px;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 9px gainsboro;
+    transition: all 0.3s ease-in-out; 
+}
+.card-produits:hover {
+    transform: scale(1.02); 
+}
+.img{
+    position: relative;
+    left: -15px;
+    width: 100%;
+    height: 50%;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 360px;
+}
+
+.solde22 {
+    position: relative;
+    color: #00b712;
+    top: -170px;
+    left: 10px;
+    width: 30%;
+    height: 13%;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: black 0px 5px 5px;
+    text-align: center;
+}
+.img img {
+    margin-top: 15px;
+    margin-left: 40%;
+}
+
+.text22 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+}
+
+
+.title {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-weight: 700;
+}

@@ -77,7 +77,7 @@ let mouseout=function(){
 for(let i=0; i<li.length;i++){
     li[i].addEventListener("mouseover",function(){
         li[i].style.textDecoration ="underline";
-        icon[i].style.color="#17E600";
+        icon[i].style.color="#0bab64";
     })
 }
 

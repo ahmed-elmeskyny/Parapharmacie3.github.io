@@ -40,7 +40,7 @@ let i=0;
  for(let i=0; i<li.length;i++){
      li[i].addEventListener("mouseover",function(){
          li[i].style.textDecoration ="underline";
-         icon[i].style.color="#17E600";
+         icon[i].style.color="#0bab64";
      })
  }
 
@@ -53,8 +53,8 @@ let i=0;
 
 window.addEventListener("scroll",function(){
    let head = document.querySelector(".nosticky");
-   head.classList.toggle("sticky", window.scrollY > 110);
    mobile.classList.toggle("sticky-mobile",window.scrollY > 500);
+   head.classList.toggle("sticky", window.scrollY > 110);
    if(window.scrollY > 110) {
        up.style.display="inline";
    }else if (window.scrollY < 110){  
