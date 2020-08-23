@@ -96,6 +96,14 @@ const products = {
         prix : '1050 DH',
         solde : '-20%',
         prixS : '2000 DH'
+    },
+    product13 : {
+        type : 'mark',
+        img  : 'img/product11.png',
+        title : ' Lotion Nettoyante Sans Rincage Peaux Intolerantes 300ml Avene',
+        prix : '1050 DH',
+        solde : '-20%',
+        prixS : '2000 DH'
     }
 }
 
