@@ -4,6 +4,7 @@ let option = document.querySelectorAll(".option");
 let categorie = document.querySelector("#categorie");
 let dropmenu = document.querySelector(".dropmenu");
 let li = document.querySelectorAll(".li");
+let aa = document.querySelectorAll(".li a");
 let icon = document.querySelectorAll(".icon");
 let cardConseil = document.querySelectorAll(".card-conseil");
 let conseilImg = document.querySelector(".conseil-img img");
@@ -20,7 +21,6 @@ let trans = document.querySelector(".transparent");
 let categories = document.querySelector("#categories");
 let subMenu = document.querySelector("#sub-menu");
 let i=0;
-
 
 
  categorie.addEventListener("mouseover",function(){
@@ -40,13 +40,15 @@ let i=0;
  for(let i=0; i<li.length;i++){
      li[i].addEventListener("mouseover",function(){
          li[i].style.textDecoration ="underline";
+         aa[i].style.color="#0bab64";
          icon[i].style.color="#0bab64";
      })
  }
 
  for(let i=0; i<li.length;i++){
     li[i].addEventListener("mouseout",function(){
-        li[i].style.textDecoration="none"
+        li[i].style.textDecoration="none";
+        aa[i].style.color="black";
         icon[i].style.color="black";
     })
 }
@@ -111,7 +113,4 @@ categories.addEventListener("click",()=>{
     subMenu.style.height="100%";
   }
 })
-
-
-
- 
+console.log(window.location.pathname)
