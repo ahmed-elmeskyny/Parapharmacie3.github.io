@@ -70,11 +70,11 @@ cardConseil.forEach((i)=>{
           conseilPage.style.display="inline";
      })
 }) 
-conseilPage.addEventListener("click",(e)=> {
-    if(e.target.classList=="conseil-page"){
-        conseilPage.style.display="none";
-    }
-})
+// conseilPage.addEventListener("click",(e)=> {
+//     if(e.target.classList=="conseil-page"){
+//         conseilPage.style.display="none";
+//     }
+// })
 
 up.addEventListener("click",()=> {
     window.scrollTo(0,0);
