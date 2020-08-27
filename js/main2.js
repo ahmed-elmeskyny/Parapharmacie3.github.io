@@ -12,6 +12,7 @@ let categorie = document.querySelector("#categorie");
 let dropmenu = document.querySelector(".dropmenu");
 let li = document.querySelectorAll(".li");
 let icon = document.querySelectorAll(".icon");
+let aa = document.querySelectorAll(".li a");
 
 window.addEventListener("scroll",function(){
     let head = document.querySelector(".nosticky");
@@ -53,7 +54,6 @@ search1.addEventListener("click",()=>{
 })
 
 trans.addEventListener("click",(e)=>{
-    console.log(e.target)
     if(e.target.classList != "search1" && e.target.classList != "search2" && e.target.classList != "search-mobile" ){
         search.style.height="0";
         trans.style.height="0";
@@ -77,13 +77,15 @@ let mouseout=function(){
 for(let i=0; i<li.length;i++){
     li[i].addEventListener("mouseover",function(){
         li[i].style.textDecoration ="underline";
+        aa[i].style.color="#0bab64";
         icon[i].style.color="#0bab64";
     })
 }
 
 for(let i=0; i<li.length;i++){
    li[i].addEventListener("mouseout",function(){
-       li[i].style.textDecoration="none"
+       li[i].style.textDecoration="none";
+       aa[i].style.color="black";
        icon[i].style.color="black";
    })
 }
